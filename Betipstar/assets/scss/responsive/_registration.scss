@@ -1,0 +1,70 @@
+// registration
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .register {
+        padding: 60px 0;
+    }
+    .register .reg-body {
+        padding: 20px;
+        .additional-info {
+            margin-top: 20px;
+        }
+    }
+    .register .reg-body form h4.sub-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .register .reg-body form input[type=text], .register .reg-body form input[type=email], .register .reg-body form input[type=password] {
+        height: 50px;
+        padding: 0 20px;
+    }
+    .register .reg-body form .term-condition h4.title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .register .reg-body form button.btn-form {
+        height: 40px;
+        float: none;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .register {
+        padding: 60px 0;
+    }
+    .register .reg-body {
+        padding: 30px;
+        .additional-info {
+            margin-top: 20px;
+        }
+    }
+    .register .reg-body form button.btn-form {
+        height: 50px;
+        float: none;
+        margin-top: 15px;
+    }
+    .register .reg-body form input[type=text], .register .reg-body form input[type=email], .register .reg-body form input[type=password] {
+        height: 50px;
+        padding: 0 20px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .register {
+        padding: 60px 0;
+    }
+    .register .reg-body {
+        padding: 30px;
+        .additional-info {
+            margin-top: 20px;
+        }
+    }
+    .register .reg-body form button.btn-form {
+        height: 50px;
+        float: none;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}

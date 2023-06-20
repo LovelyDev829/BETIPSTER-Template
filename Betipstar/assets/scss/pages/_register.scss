@@ -1,0 +1,203 @@
+// register
+.register {
+    padding: 120px 0 120px;
+    background: #f6fafe;
+    .reg-body {
+        background: $white;
+        padding: 50px;
+        padding-bottom: 28px;
+        box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.03);
+        form {
+            h4.sub-title {
+                font-size: 22px;
+                color: #444;
+                line-height: 32px;
+                font-weight: 600;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 24px;
+                margin-top: -6px;
+                text-transform: capitalize;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 2px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 10px;
+                    height: 10px;
+                    background: $gradient-1;
+                    border-radius: 50%;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 14px;
+                    height: 14px;
+                    opacity: .6;
+                    background: $gradient-1;
+                    border-radius: 50%;
+                }
+            }
+            input[type="text"], input[type="email"], input[type="password"] {
+                height: 60px;
+                width: 100%;
+                border: 1px solid #ddd;
+                background: rgba(#000, 0.04);
+                padding: 0 30px;
+                color: #444;
+                font-size: 15px;
+                margin-bottom: 15px;
+                font-family: $heading-font;
+                @include transition($transition);
+                &:focus {
+                    border-color: rgba(255, 75, 43, 0.5);
+                }
+                &::placeholder {
+                    color: rgba(#444, 0.6);
+                }
+            }
+            .term-condition {
+                margin-top: 30px;
+                h4.title {
+                    font-size: 22px;
+                    color: #444;
+                    line-height: 32px;
+                    font-weight: 600;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 24px;
+                    margin-top: -6px;
+                    text-transform: capitalize;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 2px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 10px;
+                        height: 10px;
+                        background: $gradient-1;
+                        border-radius: 50%;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 14px;
+                        height: 14px;
+                        opacity: .6;
+                        background: $gradient-1;
+                        border-radius: 50%;
+                    }
+                }
+                p {
+                    border: 1px solid #ddd;
+                    font-size: 16px;
+                    color: #666;
+                    line-height: 28px;
+                    padding: 30px;
+                    margin-bottom: 40px;
+                }
+            }
+            .form-check {
+                label {
+                    color: #444;
+                    font-weight: 400;
+                    font-family: $heading-font;
+                    display: block;
+                    user-select: none;
+                    cursor: pointer;
+                    margin-bottom: 8px;
+                }
+                p {
+                    color: #999;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                [type="checkbox"]:checked,
+                [type="checkbox"]:not(:checked) {
+                    position: absolute;
+                    left: -9999px;
+                }
+            
+                [type="checkbox"]:checked + label:before,
+                [type="checkbox"]:not(:checked) + label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid #ff4933;
+                    border-radius: 100%;
+                    background: #fff;
+                    margin-left: -6px;
+                }
+                [type="checkbox"]:checked + label:after,
+                [type="checkbox"]:not(:checked) + label:after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $gradient-1;
+                    position: absolute;
+                    top: 7px;
+                    left: 4px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                    margin-left: -6px;
+                }
+                [type="checkbox"]:not(:checked) + label:after {
+                    opacity: 0;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                }
+                [type="checkbox"]:checked + label:after {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+            button.btn-form {
+                cursor: pointer;
+                outline: none;
+                border: none;
+                font-family: $heading-font;
+                font-size: 18px;
+                color: $white;
+                background: $gradient-1;
+                padding: 0 30px;
+                height: 50px;
+                float: right;
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+        &.login {
+            form button.btn-form {
+                float: none;
+            }
+            .bottom-part {
+                margin-top: 20px;
+                padding-left: 5px;
+                p {
+                    a {
+                        display: inline-block;
+                        color: #ff4933;
+                        &.sign-up {
+                            color: green;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

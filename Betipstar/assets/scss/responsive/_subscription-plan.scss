@@ -1,0 +1,68 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .subscription-plan .single-plan .part-icon img {
+        width: 80px;
+    }
+    .subscription-plan .single-plan .part-text {
+        padding-left: 20px;
+    }
+    .subscription-plan .single-plan .part-text span.price {
+        font-size: 30px;
+    }
+    .subscription-plan .single-plan {
+        margin-bottom: 30px;
+        width: 240px;
+        display: inline-flex;
+    }
+    .subscription-plan {
+        padding: 60px 0 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .subscription-plan .single-plan {
+        width: 320px;
+        display: inline-flex;
+        margin-bottom: 30px;
+    }
+    .subscription-plan {
+        padding: 60px 0 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .subscription-plan {
+        padding: 60px 0 30px;
+    }
+    .subscription-plan .single-plan {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .subscription-plan .single-plan .part-icon img {
+        width: 80px;
+    }
+    .subscription-plan .single-plan .part-text {
+        padding-left: 20px;
+    }
+    .subscription-plan .single-plan .part-text span.price {
+        font-size: 30px;
+    }
+    .subscription-plan {
+        padding: 60px 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .subscription-plan .single-plan .part-icon img {
+        width: 80px;
+    }
+    .subscription-plan .single-plan .part-text {
+        padding-left: 20px;
+    }
+    .subscription-plan .single-plan .part-text span.price {
+        font-size: 30px;
+    }
+}

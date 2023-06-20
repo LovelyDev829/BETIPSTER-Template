@@ -1,0 +1,98 @@
+// feature
+.feature {
+    padding: 120px 0;
+    background: url('../img/shape-bg-1.png') center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    .banner-shape {
+        width: 900px;
+        position: absolute;
+        left: 0;
+        bottom: calc(-7% + -6px);
+        z-index: 3;
+        &:nth-child(2) {
+            left: auto;
+            right: -2px;
+            bottom: auto;
+            top: 0;
+            width: 500px;
+            transform: rotate(180deg) translateY(30%);
+        }
+    }
+    .part-all-feature {
+        margin-bottom: -43px;
+        position: relative;
+        z-index: 4;
+    }
+    .single-feature {
+        margin-bottom: 33px;
+        .part-icon {
+            height: 100px;
+            width: 100px;
+            margin: 21px 0;
+            margin-bottom: 25px;
+            margin-top: 0;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: inline-block;
+            &:after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                transform: translateY(-50%);
+                left: 10px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50% 30% 20% 50%;
+                background: $white;
+                z-index: -1;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: $gradient-1;
+                z-index: -1;
+            }
+            img {
+                width: auto;
+                max-width: none;
+                height: 100%;
+                padding: 26px;
+            }
+        }
+        .part-text {
+            h4.title {
+                font-size: 22px;
+                line-height: 32px;
+                color: #444;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            a {
+                font-weight: 100;
+                font-size: 16px;
+                font-family: $body-font;
+                color: #666;
+                display: inline-block;
+                img {
+                    width: 30px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .part-img {
+        margin-left: -50px;
+        img {
+            width: 750px;
+            max-width: none;
+        }
+    }
+}

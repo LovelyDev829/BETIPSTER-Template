@@ -1,0 +1,131 @@
+// tips
+.tips {
+    padding: 120px 0;
+    &.tipster-details {padding: 0;
+        .table {
+            margin-bottom: 0!important;
+        }
+    }
+    .tips-table {
+        .table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            background: #ebf2f9;
+            padding: 20px 30px;
+            margin-bottom: 0;
+            thead {
+                background: $white;
+                tr {
+                    th {
+                        padding: 0 30px;
+                        height: 60px;
+                        vertical-align: middle;
+                        font-family: $heading-font;
+                        color: #666;
+                        border: none;
+                        text-align: center;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: $white;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    th {
+                        text-align: center;
+                        padding: 0 20px;
+                        height: 70px;
+                        vertical-align: middle;
+                        border: none;
+                        a.tipster-pic {
+                            display: inline-block;
+                            display: -webkit-inline-box;
+                            width: 45px;
+                            height: 45px;
+                            overflow: hidden;
+                            border: 1px solid #eb3349;
+                            padding: 2px;
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    td {
+                        border: none;
+                        text-align: center;
+                        padding: 0 20px;
+                        height: 70px;
+                        vertical-align: middle;
+                        font-family: $heading-font;
+                        color: #666;
+                        a.tipster-pic {
+                            display: inline-block;
+                            width: 42px;
+                            height: 42px;
+                            overflow: hidden;
+                            border: 1px solid #eb3349;
+                            padding: 2px;
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        .buy-tips-btn {
+                            display: inline-block;
+                            background: $gradient-1;
+                            color: $white;
+                            font-weight: 400;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 15px;
+                            font-size: 14px;
+                        }
+                        span.profit {
+                            display: inline-block;
+                            border: 1px solid green;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 15px;
+                            color: green;
+                        }
+                        span.single-data {
+                            display: inline-block;
+                            border: 1px solid #666;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 15px;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            &.green {
+                                border: 1px solid green;
+                                color: green;
+                            }
+                            &.event {
+                                border-bottom: none;
+                                padding: 0;
+                            }
+                        }
+                        span.suchi {
+                            display: block;
+                            padding: 0 15px;
+                            span {
+                                display: block;
+                                font-size: 14px;
+                                font-weight: 400;
+                                opacity: .8;
+                                &.date {
+                                    border-bottom: 1px solid rgba(235, 51, 73, 0.7);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

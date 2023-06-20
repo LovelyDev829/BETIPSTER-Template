@@ -1,0 +1,92 @@
+// newsletter
+.newsletter {
+    padding: 120px 0;
+    background: url('../img/stadium.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(right, #111, rgb(17 17 17 / 0.9));
+        z-index: -1;
+    }
+    .newsletter-area {
+        width: 100%;
+        background: #242424;
+        padding: 60px;
+        padding-right: 0;
+        .part-text {
+            h3.sub-title {
+                font-family: $special;
+                font-weight: 500;
+                color: $white;
+                font-size: 24px;
+                line-height: 34px;
+                margin-top: -4px;
+            }
+            h2 {
+                color: $white;
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 700;
+                margin-bottom: 28px;
+            }
+        }
+        .part-form {
+            form {
+                position: relative;
+                input {
+                    border: 1px solid #ff7162;
+                    background: transparent;
+                    color: $white;
+                    height: 50px;
+                    width: 100%;
+                    padding: 0 30px;
+                    &::placeholder {
+                        color: rgba($white, 0.6);
+                    }
+                }
+                button {
+                    background: transparent;
+                    border: none;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -50px;
+                    height: 100px;
+                    cursor: pointer;
+                    outline: none;
+                    img {
+                        height: 100%;
+                        width: auto;
+                        max-width: none;
+                        filter: drop-shadow(1px 1px 0 $white);
+                    }
+                }
+            }
+        }
+    }
+    .part-img {
+        background: url('../img/shape-newsletter.png') no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        left: 55%;
+        height: 100%;
+        width: 60%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 500px;
+            margin-left: -140px;
+        }
+    }
+}

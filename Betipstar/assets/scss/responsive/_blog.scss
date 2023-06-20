@@ -1,0 +1,101 @@
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    // blog post pagination
+    .bettix-pagination ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 3px;
+    }
+    .blog.blog-page .bettix-pagination {
+        margin-top: 0;
+    }
+
+    // blog details
+    .blog.blog-details .single-blog .part-text a.title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blog.blog-details .single-blog .part-text .meta-info li {
+        font-size: 15px;
+        display: block;
+        line-height: 30px;
+    }
+    .blog.blog-details .single-blog .part-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .blog.blog-details .single-blog .part-text p.marked {
+        padding: 20px;
+    }
+    .blog.blog-details .comment-area h3.title {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .blog.blog-details .comment-area {
+        padding: 20px;
+    }
+    .blog.blog-details .comment-area .single-comment .part-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80px;
+    }
+    .blog.blog-details .comment-area .single-comment {
+        display: block;
+        padding-right: 0;
+    }
+    .blog.blog-details .comment-area .single-comment .psrt-text span.comment-date {
+        font-size: 15px;
+    }
+    .blog.blog-details .comment-area .single-comment button.reply {
+        position: initial;
+        margin-top: 20px;
+    }
+    .blog.blog-details .comment-form {
+        padding: 20px;
+    }
+    .blog.blog-details .comment-form form input {
+        height: 40px;
+    }
+    .blog.blog-details .comment-form form button {
+        height: 40px;
+    }
+    .blog.blog-details .blog-sidebar {
+        margin-top: 30px;
+    }
+    .blog.blog-details .blog-sidebar .single-sidebar {padding: 20px;}
+    .blog.blog-details .blog-sidebar .single-sidebar h4.title {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .blog.blog-details .blog-sidebar .single-sidebar .popular-news .single-post .part-img {
+        width: 60px;
+    }
+    .blog.blog-details .blog-sidebar .single-sidebar .popular-news .single-post {
+        align-items: flex-start;
+    }
+    .blog.blog-details {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .blog.blog-details .blog-sidebar {
+        margin-top: 30px;
+    }
+    .blog.blog-details .comment-form {
+        padding: 20px;
+    }
+    .blog.blog-details .comment-area {
+        padding: 20px;
+    }
+    .blog.blog-details .blog-sidebar .single-sidebar {padding: 20px;}
+    .blog.blog-details {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .blog.blog-details {
+        padding-bottom: 30px;
+    }
+}

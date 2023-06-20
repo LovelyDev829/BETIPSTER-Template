@@ -1,0 +1,183 @@
+// testimonial
+.testimonial {
+    padding: 120px 0;
+    position: relative;
+    background: url(../img/stadium.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: -webkit-linear-gradient(50deg, #111, rgba(17, 17, 17, 0.9));
+    }
+    .testimonial-slider {
+        .disabled {
+            display: none;
+        }
+        .owl-dots {
+            text-align: center;
+            line-height: 0;
+            margin-top: 40px;
+            .owl-dot {
+                width: 10px;
+                height: 10px;
+                background: $gradient-1;
+                display: inline-block;
+                border-radius: 50px;
+                margin-right: 6px;
+                @include transition($transition);
+                cursor: pointer;
+                opacity: .6;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+        .owl-item.active {
+            .single-testimonial {
+                .part-img {
+                    transform: scale(1.0);
+                    opacity: 1;
+                }
+                .part-text {
+                    &:after {
+                        width: 350px;
+                        top: -85px;
+                        bottom: -40px;
+                        transform: translateX(-50%) rotateY(0deg);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .single-testimonial {
+        text-align: center;
+        .part-img {
+            // width: 100px;
+            display: inline-block;
+            overflow: hidden;
+            // border: 2px dashed rgba(255, 70, 71, 0.5);
+            border-radius: 50%;
+            padding: 5px;
+            position: relative;
+            z-index: 4;
+            transform: scale(0.8);
+            @include transition($transition);
+            transition-delay: .4s;
+            opacity: 0;
+            .part-pic {
+                height: 120px;
+                width: 120px;
+                margin: 21px 0;
+                margin-top: 0;
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50% 30% 20% 50%;
+                    background: $white;
+                    z-index: -1;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: $gradient-1;
+                    z-index: -1;
+                }
+                img {
+                    // width: auto;
+                    // max-width: none;
+                    // height: 100%;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50% 30% 20% 50%;
+                }
+            }
+        }
+        .part-text {
+            position: relative;
+            z-index: 2;    
+            margin-bottom: 32px;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%) rotateY(180deg);
+                background: #242424;
+                width: 300px;
+                top: -45px;
+                bottom: 0px;
+                opacity: 1;
+                z-index: -1;
+                @include transition($transition);
+                transition-delay: .4s;
+                opacity: 0;
+            }
+            .icon-for-quot {
+                font-size: 45px;
+                margin-bottom: 27px;
+                color: #ff4647;
+                opacity: .5;
+                font-style: italic;
+            }
+            p {
+                font-size: 24px;
+                line-height: 38px;
+                font-style: italic;
+                position: relative;
+                padding-bottom: 31px;
+                margin-bottom: 35px;
+                color: #999;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 2px;
+                    background: $gradient-1;
+                    width: 100px;
+                    bottom: 0;
+                }
+            }
+            span {
+                display: block;
+                &.position {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    color: #999;
+                }
+                &.user-name {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

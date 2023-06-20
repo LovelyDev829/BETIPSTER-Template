@@ -1,0 +1,69 @@
+/* =================================
+ Temlate Name : Bidpa
+ Author Name : autworks
+ Date: 27/09/2020
+ Version: 1.0
+ =================================
+
+/* =================================
+ css index
+ =================================
+ *. typography
+ *. section title
+ *. preloader
+ *. scroll to top button
+ *. normalize
+
+================================= */
+
+
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+@import "main/_animation";
+//=Section scss
+
+@import "sections/_header";
+@import "sections/_banner";
+@import "sections/_how-it-works";
+@import "sections/_about";
+@import "sections/_tipster-leaderboard";
+@import "sections/_statics";
+@import "sections/_tips";
+@import "sections/_feature";
+@import "sections/_testimonial";
+@import "sections/_bookmakers";
+@import "sections/_blog.scss";
+@import "sections/_newsletter";
+@import "sections/_available-countries";
+@import "sections/_footer";
+
+//=Pages scss
+@import "pages/_breadcrumb";
+@import "pages/_add-tips";
+@import "pages/_tipster";
+@import "pages/_tipster-details";
+@import "pages/_subscription-plan";
+@import "pages/_cta";
+@import "pages/_credits";
+@import "pages/_contact";
+@import "pages/_faq";
+@import "pages/_register";
+@import "pages/_terms";
+@import "pages/_error";
+
+//=Responsive scss
+@import "responsive/_homepage";
+@import "responsive/_breadcrumb";
+@import "responsive/_add-tips";
+@import "responsive/_blog";
+@import "responsive/_contact";
+@import "responsive/_faq";
+@import "responsive/_registration";
+@import "responsive/_subscription-plan";
+@import "responsive/_cta";
+@import "responsive/_credits";
+@import "responsive/_tipster";
+@import "responsive/_tipster-details";
+@import "responsive/_terms";

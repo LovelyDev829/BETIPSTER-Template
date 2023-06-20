@@ -1,0 +1,69 @@
+// breadcrumb
+.breadcrumb-betipsta {
+    background: url('../img/stadium.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 100px 0 195px;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(right, #111, rgb(17 17 17 / 0.7));
+        z-index: -1;
+    }
+    .shape {
+        position: absolute;
+        top: calc(100% - 95px);
+        height: 320px;
+        left: 0;
+        width: 103%;
+        transform: rotateX(180deg);
+        max-width: none;
+    }
+    .part-text {
+        h2.title {
+            color: $white;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 700;
+            margin-top: -5px;
+            margin-bottom: 14px;
+        }
+        ul {
+            display: flex;
+            margin-bottom: -8px;
+            li {
+                position: relative;
+                color: $white;
+                font-family: $heading-font;
+                font-size: 18px;
+                padding-left: 20px;
+                margin-left: 30px;
+                a {
+                    display: inline-block;
+                    color: $white;
+                    font-size: 18px;
+                }
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $gradient-1;
+                    border-radius: 50%;
+                    right: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:first-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

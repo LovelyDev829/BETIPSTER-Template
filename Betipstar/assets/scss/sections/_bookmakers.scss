@@ -1,0 +1,101 @@
+// bookmakers
+.bookmakers {
+    padding: 120px 0;
+    .single-bookmaker {
+        text-align: center;
+        background: url('../img/shape-bg-1.png') center bottom no-repeat;
+        background-size: cover;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background: $gradient-1;
+        }
+        .bookmaker-logo {
+            width: 130px;
+            height: 90px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .bookmakers-text {
+            a.title {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 700;
+                color: #555;
+                // @include text-gradient-1;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 20px;
+                padding: 0 30px;
+            }
+        }
+        .bookies-rating {
+            margin-bottom: 24px;
+            ul {
+                &:before {
+                    content: 'Ratings : ';
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #666;
+                    font-family: $body-font;
+                }
+                li {
+                    display: inline-block;
+                    @include text-gradient-1;
+                    font-size: 16px;
+                }
+            }
+        }
+        .bookies-button {
+            padding: 30px 0;
+            position: relative;
+            background: url(../img/stadium.jpg) center center no-repeat;
+            background-size: cover;
+            z-index: 2;
+            border-radius: 30% 30% 0 0;
+            overflow: hidden;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: -webkit-linear-gradient(50deg, #111, rgba(17, 17, 17, 0.7));
+            }
+            a {
+                display: inline-block;
+                background: $gradient-1;
+                color: $white;
+                height: 35px;
+                line-height: 35px;
+                padding: 0 15px;
+                margin-right: 11px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.bookmakers-page {
+        .single-bookmaker {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .bookmakers.bookmakers-page {
+        padding: 60px 0 30px;
+    }
+}

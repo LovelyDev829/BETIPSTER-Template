@@ -1,0 +1,62 @@
+// about
+.about {
+    padding: 120px 0;
+    background: url('../img/shape-bg-1.png') center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    .banner-shape {
+        width: 900px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        &:nth-child(2) {
+            left: auto;
+            right: -2px;
+            bottom: auto;
+            top: 0;
+            width: 500px;
+            transform: rotate(180deg) translateY(30%);
+            // display: none;
+        }
+    }
+    .part-img {
+        margin-right: -70px;
+    }
+    .part-text {
+        h2 {
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+          }
+          h4.subtitle {
+            font-size: 24px;
+            display: inline-block;
+            line-height: 34px;
+            background: -webkit-linear-gradient(110deg, #eb3349, #f45c43);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-style: italic;
+            font-family: $special;
+            margin-top: -3px;
+            margin-bottom: 7px;
+          }
+          p {
+            color: #666;
+            line-height: 28px;
+          }
+          a.learn-more-btn {
+            height: 50px;
+            line-height: 50px;
+            background: -webkit-linear-gradient(110deg, #eb3349, #f45c43);
+            color: $white;
+            text-transform: capitalize;
+            font-size: 18px;
+            padding: 0 30px;
+            margin-top: 25px;
+        }
+    }
+}

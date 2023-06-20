@@ -1,0 +1,299 @@
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .tipster-datails .primary-step {
+        padding: 60px 0;
+    }
+    .tipster-datails .title-cover h3.part-title {
+        font-size: 22px;
+        line-height: 32px;
+        padding: 0 15px;
+    }
+    .tipster-datails .profile-step {
+        padding: 20px;
+    }
+    .tipster-datails .part-bio {
+        margin-bottom: 30px;
+    }
+    .tipster-datails .part-bio h2.name {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .tipster-datails .part-bio ul li span.title {
+        font-size: 16px;
+    }
+    .tipster-datails .part-bio ul li span {
+        font-size: 16px;
+    }
+    .tipster-datails .part-bio ul li span.text {
+        display: block;
+    }
+    .tipster-datails .part-bio ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 26px;
+    }
+    .tipster-datails .part-bio span.ranking-number {
+        margin-bottom: 23px;
+    }
+    .tipster-datails .part-bio .act-buttons {
+        margin-top: 30px;
+    }
+    .tipster-datails .part-bio .act-buttons a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .tipster-datails .part-img {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .tipster-datails .part-statics .single-statics {
+        padding: 20px 0;
+    }
+    .tipster-datails .part-statics .single-statics .part-stats span.number {
+        font-size: 28px;
+    }    
+    .tipster-datails .part-statics .single-statics .icon {
+        width: 50px;
+    }
+
+    .tipster-datails .statics-step {
+        padding: 60px 0 40px;
+    }
+    .tipster-datails .statics-step .single-statics span.number {
+        font-size: 30px;
+    }
+    .tipster-datails .statics-step .single-statics {
+        margin-bottom: 20px;
+    }
+    .tipster-datails .chart-step {
+        display: none;
+    }
+    .tipster-datails .breakdown-step {
+        padding-top: 60px;
+    }
+    .tipster-datails .breakdown-step .table-cover {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .tipster-datails .breakdown-step .table {
+        width: 1200px;
+        margin-bottom: 0;
+    }
+    .tipster-datails {
+        padding: 0 0 60px;
+    }
+    .tips.tipster-details {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .tipster-datails .part-bio {
+        text-align: center;
+    }
+    .tipster-datails .part-bio ul li {
+        align-items: center;
+    }
+    .tipster-datails .part-bio .act-buttons {
+        justify-content: center;
+    }
+    .tipster-datails .part-statics .single-statics .icon {
+        display: none;
+    }
+    .tipster-datails .part-statics {
+        display: flex;
+    }
+    .tipster-datails .part-statics .single-statics {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+    }
+    .tipster-datails .part-statics .single-statics:first-child {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .tipster-datails .part-statics .single-statics .icon {
+        width: 50px;
+    }
+    .tipster-datails .part-img {
+        width: 100%;
+    }
+    .tipster-datails .part-statics .single-statics {
+        padding: 15px 0;
+    }
+    .tipster-datails .part-statics .single-statics .part-stats span.number {
+        font-size: 28px;
+    }
+    .tipster-datails .profile-step { 
+        padding: 35px;
+    }
+    .tipster-datails .part-statics .single-statics:first-child {
+        padding-top: 20px;
+    }
+    .tipster-datails .part-bio {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .tipster-datails .part-bio h2.name {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .tipster-datails .part-bio ul li span.title, .tipster-datails .part-bio ul li span {
+        font-size: 16px;
+    }
+    .tipster-datails .part-bio .act-buttons a {
+        height: 45px;
+        line-height: 45px;
+    }
+    .tipster-datails .part-bio ul li, .tipster-datails .part-bio .act-buttons {
+        justify-content: center;
+    }
+
+    .tipster-datails .primary-step {
+        padding: 60px 0;
+    }
+    .tipster-datails {
+        padding: 0 0 60px;
+    }
+    .tips.tipster-details {
+        padding-top: 60px;
+    }
+
+    .tipster-datails .chart-step {
+        display: none;
+    }
+    .tipster-datails .breakdown-step {
+        padding-top: 60px;
+    }
+    .tipster-datails .breakdown-step .table-cover {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .tipster-datails .breakdown-step .table {
+        width: 1200px;
+        margin-bottom: 0;
+    }
+    .tipster-datails .statics-step {
+        padding: 60px 0 30px;
+    }
+    .tipster-datails .statics-step .single-statics span.number {
+        font-size: 30px;
+    }
+    .tipster-datails .statics-step .single-statics {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #doghnutChart {
+        height: 200px!important;
+        width: 400px!important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .tipster-datails .chart-step .result ul li span.number {
+        font-size: 28px;
+    }
+    .tipster-datails .chart-step .result ul li span.title {
+        font-size: 16px;
+    }
+    .tipster-datails .chart-step .result {
+        margin-top: 12px;
+    }
+    .tipster-datails .part-statics .single-statics .icon {
+        width: 50px;
+    }
+    .tipster-datails .part-img {
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+    }
+    .tipster-datails .part-img {
+
+    }
+    .tipster-datails .part-statics .single-statics {
+        padding: 15px 0;
+    }
+    .tipster-datails .part-statics .single-statics .part-stats span.number {
+        font-size: 28px;
+    }
+    .tipster-datails .profile-step { 
+        padding: 35px;
+    }
+    .tipster-datails .part-statics .single-statics:first-child {
+        padding-top: 20px;
+    }
+    .tipster-datails .part-bio {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .tipster-datails .part-bio h2.name {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .tipster-datails .part-bio ul li span.title, .tipster-datails .part-bio ul li span {
+        font-size: 16px;
+    }
+    .tipster-datails .part-bio .act-buttons a {
+        height: 45px;
+        line-height: 45px;
+    }
+    .tipster-datails .part-bio ul li, .tipster-datails .part-bio .act-buttons {
+        justify-content: center;
+    }
+
+    .tipster-datails .primary-step {
+        padding: 60px 0;
+    }
+    .tipster-datails {
+        padding: 0 0 60px;
+    }
+    .tips.tipster-details {
+        padding-top: 60px;
+    }
+
+    .tipster-datails .chart-step {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    .tipster-datails .breakdown-step {
+        padding-top: 60px;
+    }
+    .tipster-datails .breakdown-step .table-cover {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .tipster-datails .breakdown-step .table {
+        width: 1200px;
+        margin-bottom: 0;
+    }
+    .tipster-datails .statics-step {
+        padding: 60px 0 30px;
+    }
+    .tipster-datails .statics-step .single-statics span.number {
+        font-size: 30px;
+    }
+    .tipster-datails .statics-step .single-statics {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .tipster-datails .part-img {
+        width: 100%;
+    }
+    .tipster-datails .profile-step {
+        padding: 40px;
+    }
+    .tipster-datails .part-bio ul li span {
+        font-size: 16px!important;
+    }
+    .tipster-datails .part-statics .single-statics {
+        padding: 20px 0;
+    }
+}

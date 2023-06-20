@@ -1,0 +1,430 @@
+// addtips
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .add-tips {
+        padding: 60px 0;
+    }
+    .add-tips .primary-step {
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    .add-tips .primary-step .dropdown a.dropdown-toggle {
+        margin-bottom: 10px;
+    }
+    .add-tips .prediction-select-step .part-icon {
+        overflow: hidden;
+        padding-left: 10px;
+    }
+    .add-tips .prediction-select-step .single-game {
+        padding: 20px 0;
+        margin-bottom: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        &.first-element {
+            border-top: 1px solid #ddd;
+        }
+    }
+    .add-tips .prediction-select-step .time {
+        border: 1px solid #ddd;
+        padding-left: 15px;
+        padding: 8px 15px;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+    .add-tips .prediction-select-step .team {
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .add-tips .prediction-select-step .time span {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .add-tips .prediction-select-step .prediction-sheet ul li span.prediction-amount {
+        font-size: 15px;
+    }
+    .add-tips .prediction-select-step .team span {
+        font-size: 15px;
+    }
+    .add-tips .prediction-select-step .part-icon:after {
+        width: 100%;
+        border-radius: 0;
+    }
+    .add-tips .publish-step .part-header {
+        display: block;
+    }
+    .add-tips .publish-step {
+        padding: 20px;
+    }
+    .add-tips .publish-step .part-header .left {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .add-tips .publish-step .part-header .left span.vs {
+        display: block;
+    }
+    .add-tips .publish-step .part-header .left span {
+        font-size: 16px;
+    }
+    .add-tips .publish-step .part-header .right {
+        text-align: center;
+        border-width: 1px;
+    }
+    .add-tips .publish-step .part-header .right span {
+        font-size: 18px;
+        line-height: 28px; 
+    }
+    .add-tips .publish-step .part-right {
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 25px 0;
+    }
+    .add-tips .publish-step .part-right .stake {
+        justify-content: center;
+    }
+    .add-tips .publish-step .part-right .publish-btn {
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .add-tips .publish-step .part-right .stake button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right .stake span.stake-number {
+        height: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right:before {
+        border-radius: 0;
+    }
+    .betipsta-radio[type=radio]:checked + label, .betipsta-radio[type=radio]:not(:checked) + label {
+        font-size: 15px;
+        padding-left: 24px;
+    }
+    .add-tips .publish-step .part-footer .privacy {
+        margin-bottom: 20px;
+    }
+    .add-tips .publish-step .part-analysis textarea {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .add-tips {
+        padding: 60px 0;
+    }
+    .add-tips .primary-step {
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    .add-tips .primary-step .dropdown a.dropdown-toggle {
+        margin-bottom: 10px;
+    }
+    .add-tips .prediction-select-step .part-icon {
+        overflow: hidden;
+        padding-left: 10px;
+    }
+    .add-tips .prediction-select-step .single-game {
+        padding: 20px;
+        &.first-element {
+            border-top: 1px solid #ddd;
+        }
+    }
+    .add-tips .prediction-select-step .time {
+        border: 1px solid #ddd;
+        padding-left: 15px;
+        padding: 8px 15px;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+    .add-tips .prediction-select-step .team {
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .add-tips .prediction-select-step .time span {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .add-tips .prediction-select-step .prediction-sheet ul li span.prediction-amount {
+        font-size: 16px;
+    }
+    .add-tips .prediction-select-step .team span {
+        font-size: 16px;
+    }
+    .add-tips .prediction-select-step .part-icon:after {
+        width: 100%;
+        border-radius: 0;
+    }
+    .add-tips .publish-step .part-header {
+        display: block;
+    }
+    .add-tips .publish-step {
+        padding: 20px;
+    }
+    .add-tips .publish-step .part-header .left {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .add-tips .publish-step .part-header .left span.vs {
+        display: block;
+    }
+    .add-tips .publish-step .part-header .left span {
+        font-size: 18px;
+    }
+    .add-tips .publish-step .part-header .right {
+        text-align: center;
+        border-width: 1px;
+    }
+    .add-tips .publish-step .part-header .right span {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .add-tips .publish-step .part-right {
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 25px 0;
+    }
+    .add-tips .publish-step .part-right .stake {
+        justify-content: center;
+    }
+    .add-tips .publish-step .part-right .publish-btn {
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .add-tips .publish-step .part-right .stake button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right .stake span.stake-number {
+        height: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right:before {
+        border-radius: 0;
+    }
+    .betipsta-radio[type=radio]:checked + label, .betipsta-radio[type=radio]:not(:checked) + label {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+    .add-tips .publish-step .part-footer .privacy {
+        margin-bottom: 20px;
+    }
+    .add-tips .publish-step .part-analysis textarea {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .add-tips {
+        padding: 60px 0;
+    }
+    .add-tips .primary-step {
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    .add-tips .primary-step .dropdown a.dropdown-toggle {
+        margin-bottom: 10px;
+    }
+    .add-tips .prediction-select-step .part-icon {
+        overflow: hidden;
+        padding-left: 10px;
+    }
+    .add-tips .prediction-select-step .single-game {
+        padding: 20px;
+        &.first-element {
+            border-top: 1px solid #ddd;
+        }
+    }
+    .add-tips .prediction-select-step .time {
+        border: 1px solid #ddd;
+        padding-left: 15px;
+        padding: 8px 15px;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+    .add-tips .prediction-select-step .team {
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .add-tips .prediction-select-step .time span {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .add-tips .prediction-select-step .prediction-sheet ul li span.prediction-amount {
+        font-size: 16px;
+    }
+    .add-tips .prediction-select-step .team span {
+        font-size: 16px;
+    }
+    .add-tips .prediction-select-step .part-icon:after {
+        width: 100%;
+        border-radius: 0;
+    }
+    .add-tips .publish-step .part-header {
+        display: block;
+    }
+    .add-tips .publish-step {
+        padding: 20px;
+    }
+    .add-tips .publish-step .part-header .left {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .add-tips .publish-step .part-header .left span.vs {
+        display: block;
+    }
+    .add-tips .publish-step .part-header .left span {
+        font-size: 18px;
+    }
+    .add-tips .publish-step .part-header .right {
+        text-align: center;
+        border-width: 1px;
+    }
+    .add-tips .publish-step .part-header .right span {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .add-tips .publish-step .part-right {
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 25px 0;
+    }
+    .add-tips .publish-step .part-right .stake {
+        justify-content: center;
+    }
+    .add-tips .publish-step .part-right .publish-btn {
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .add-tips .publish-step .part-right .stake button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right .stake span.stake-number {
+        height: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right:before {
+        border-radius: 0;
+        width: 100%;
+        left: 0;
+    }
+    .add-tips .publish-step .part-right:after {
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .betipsta-radio[type=radio]:checked + label, .betipsta-radio[type=radio]:not(:checked) + label {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+    .add-tips .publish-step .part-footer .privacy {
+        margin-bottom: 20px;
+    }
+    .add-tips .publish-step .part-analysis textarea {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .add-tips {
+        padding: 60px 0;
+    }
+    .add-tips .primary-step {
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    .add-tips .primary-step .dropdown a.dropdown-toggle {
+        margin-bottom: 10px;
+    }
+    .add-tips .prediction-select-step .part-icon {
+        overflow: hidden;
+        padding-left: 10px;
+    }
+    .add-tips .prediction-select-step .single-game {
+        padding: 20px;
+        &.first-element {
+            border-top: 1px solid #ddd;
+        }
+    }
+    .add-tips .prediction-select-step .time {
+        margin-bottom: 20px;
+        align-items: flex-start;
+        border: none;
+    }
+    .add-tips .prediction-select-step .team {
+        padding-left: 0;
+    }
+    .add-tips .prediction-select-step .time span {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .add-tips .prediction-select-step .prediction-sheet ul li span.prediction-amount {
+        font-size: 16px;
+    }
+    .add-tips .prediction-select-step .team span {
+        font-size: 16px;
+    }
+    .add-tips .publish-step .part-header .left span {
+        font-size: 18px;
+    }
+    .add-tips .publish-step .part-header .right span {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .add-tips .publish-step .part-right {
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 25px 0;
+    }
+    .add-tips .publish-step .part-right .stake {
+        justify-content: center;
+    }
+    .add-tips .publish-step .part-right .publish-btn {
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .add-tips .publish-step .part-right .stake button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right .stake span.stake-number {
+        height: 40px;
+        line-height: 40px;
+    }
+    .add-tips .publish-step .part-right:before, .add-tips .publish-step .part-right:after {
+        border-radius: 0;
+        left: 0;
+        width: 100%;
+    }
+    .betipsta-radio[type=radio]:checked + label, .betipsta-radio[type=radio]:not(:checked) + label {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+    .add-tips .publish-step .part-footer .privacy {
+        margin-bottom: 20px;
+    }
+    .add-tips .publish-step .part-analysis textarea {
+        margin-bottom: 20px;
+    }
+}

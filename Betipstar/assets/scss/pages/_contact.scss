@@ -1,0 +1,157 @@
+// contact
+.contact {
+    padding: 120px 0 240px;
+    position: relative;
+    .contact-form {
+        box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
+        padding: 50px;
+        position: relative;
+        z-index: 3;
+        background: $white;
+        form {
+            label {
+                margin: 0;
+                line-height: 100%;
+                font-size: 14px;
+                font-family: $heading-font;
+                font-weight: 500;
+                text-transform: capitalize;
+                display: block;
+                color: #444;
+            }
+            input {
+                width: 100%;
+                font-size: 15px;
+                border: none;
+                border-bottom: 1px solid rgba(#888, 0.2);
+                padding: 19px 0 14px;
+                margin-bottom: 30px;
+                color: #888;
+                @include transition($transition);
+                &::placeholder {
+                    color: rgba(#888, 0.5);
+                }
+                &:focus {
+                    border-color: transparent;
+                    transform: scale(1.2);
+                    box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
+                    padding: 19px 20px 14px;
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+            textarea {
+                width: 100%;
+                font-size: 15px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                padding: 9px 0 14px;
+                display: grid;
+                height: 100px;
+                color: #444;
+                @include transition($transition);
+                resize: none;
+                &::placeholder {
+                    color: rgba(#444, 0.5);
+                }
+                &:focus {
+                    border-color: transparent;
+                    transform: scale(1.2);
+                    padding-left: 20px;
+                    box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
+                    padding-right: 20px;
+                    padding-top: 12px;
+                }
+            }
+            .submit-btn {
+                background: $gradient-1;
+                color: $white;
+                text-transform: capitalize;
+                border: none;
+                height: 50px;
+                width: 130px;
+                font-size: 18px;
+                font-family: $heading-font;
+                margin-top: 40px;
+                cursor: pointer;
+                @include transition($transition);
+                &:hover {
+                    background: #444;
+                }
+            }
+        }
+    }
+    .contact-information {
+        background: $gradient-1;
+        padding: 30px;
+        // padding-bottom: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
+        position: relative;
+        z-index: 2;
+        transform: scale(1.1);
+        padding-left: 50px;
+        .about-site {
+            .logo {
+                filter: drop-shadow(2px 0 5px rgba(255, 255, 255, 0.361));
+                width: 100px;
+                margin-bottom: 22px;
+            }
+            p {
+                color: rgba($white, 0.95);
+                line-height: 25px;
+                font-size: 15px;          
+                margin-bottom: 20px;  
+            }
+        }
+        .info-list {
+            li {
+                padding: 10px 0;
+                font-size: 14px;
+                border-bottom: 1px solid rgba($white, 0.2);
+                &:first-child {
+                    border-top: 1px solid rgba($white, 0.2);
+                }
+                span {
+                    display: inline-block;
+                    color: $white;
+                    &.icon {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        .social-link {
+            margin-top: 30px;
+            li {
+                display: inline-block;
+                a {
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: $white;
+                    text-align: center;
+                    font-size: 14px;
+                    border-radius: 50% 30% 20% 50%;
+                    color: #444;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    .maps {
+        display: grid;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        iframe {
+            border: none;
+            width: 100%;
+            height: 450px;
+        }
+    }
+}

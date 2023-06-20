@@ -1,0 +1,35 @@
+// cta 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .cta .part-text h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .cta .buttons {
+        text-align: left!important;
+        a {
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+    .cta {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cta .part-text h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .cta .buttons {
+        text-align: left!important;
+        a {
+            margin-top: 30px;
+        }
+    }
+    .cta {
+        padding: 50px 0;
+    }
+}

@@ -1,0 +1,66 @@
+// banner
+.banner {
+    background: url('../img/stadium.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(right, #111, rgb(17 17 17 / 0.7));
+        z-index: -1;
+    }
+    .banner-content {
+        padding: 240px 0;
+        h4.subtitle {
+            color: $white;
+            background: -webkit-linear-gradient(110deg, #eb3349, #f45c43);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            display: inline-block;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            margin-top: -5px;
+        }
+        h1 {
+            color: $white;
+            font-size: 70px;
+            line-height: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #d0d0d0;
+            font-size: 18px;
+            line-height: 32px;
+        }
+        a.banner-btn {
+            height: 50px;
+            line-height: 50px;
+            background: -webkit-linear-gradient(110deg, #eb3349, #f45c43);
+            color: $white;
+            text-transform: capitalize;
+            font-size: 18px;
+            padding: 0 30px;
+            margin-top: 25px;
+        }
+    }
+    .part-img {
+        margin-left: -320px;    
+        position: relative;
+        bottom: -1px;
+        img {
+            width: 1000px;
+            max-width: none;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+// betipster
+.tipster-list {
+    padding: 120px 0 80px;
+    .single-tipster {
+        text-align: center;
+        // border: 1px solid #ccc;
+        .img-cover {
+            border: 1px solid #ddd;
+            border-bottom: none;
+            background: url('../img/shape-bg-1.png') center bottom no-repeat;
+            background-size: cover;
+        }
+        .part-img {
+            margin: 30px 0;
+            width: 140px;
+            display: inline-block;
+            border-radius: 50%;
+            background: $gradient-1;
+            position: relative;
+            img {
+                width: 100%;
+                border-radius: 50% 30% 20% 50%;
+                border: 10px solid transparent;
+            }
+            a.taken-btn {
+                height: 40px;
+                line-height: 40px;
+                position: absolute;
+                right: calc(100% - 40px);
+                border-radius: 50px;
+                text-align: right;
+                display: flex;
+                transform: scale(0);
+                @include transition($transition);
+                &.view-btn {
+                    bottom: 30px;
+                    right: calc(100% - 30px);
+                    span.icon, span.text {
+                        background: #ffac00;
+                        color: $white;
+                    }
+                    span.icon {
+                        font-size: 15px;
+                    }
+                }
+                &.follow-btn {
+                    top: 0px;
+                    right: calc(100% - 50px);
+                    span.icon, span.text {
+                        background: green;
+                        color: $white;
+                    }
+                }
+                span.icon {
+                    position: relative;
+                    right: 0;
+                    background: #000;
+                    width: 40px;
+                    text-align: center;
+                    border-radius: 50px;
+                    @include transition($transition);
+                }
+                span.text {
+                    position: absolute;
+                    right: 12px;
+                    background: #000;
+                    text-align: center;
+                    padding-left: 15px;
+                    border-radius: 50px 0 0 50px;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition($transition);
+                }
+
+                &:hover {
+                    span.text {
+                        right: 40px;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 15px;
+                    }
+                    span.icon {
+                        border-radius: 0 50px 50px 0;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .part-img {
+                a.taken-btn {
+                    transform: scale(1.0);
+                }
+            }
+        }
+        .part-text {
+            .tipster-bio {
+                padding: 18px 0 25px;
+                border: 1px solid #ddd;
+                border-bottom: none;
+                span {
+                    display: block;
+                    &.tipster-name {
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-family: $heading-font;
+                        color: #555;
+                        font-weight: 600;
+                        margin-bottom: 3px;
+                    }
+                    &.ratings {
+                        display: inline-block;
+                        padding: 2px 8px;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        @include text-gradient-1;
+                        background-image: -webkit-linear-gradient(120deg, #673AB7, #f45c43);
+                    }
+                    &.ranking-number {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: $heading-font;
+                        color: #777;
+                        margin-bottom: 12px;
+                        span {
+                            display: inline-block;
+                            &.badge {
+                                background: $gradient-1;
+                                color: $white;
+                                font-family: $body-font;
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .tipster-statics {
+                padding: 10px 0;
+                position: relative;
+                background: $gradient-1;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $white;
+                    opacity: .5;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 50%;
+                    width: 1px;
+                    height: 100%;
+                    background: $white;
+                    opacity: .5;
+                }
+                .single-statics {
+                    width: calc(50% - 10px);
+                    display: inline-block;
+                    margin: 15px 2px;
+                    z-index: 2;
+                    position: relative;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:nth-child(2n + 1) {
+                        text-align: right;
+                        padding-right: 10px;
+                        padding-left: 0;
+                    }
+                    // border: 1px solid #f45c43;
+                    // background: -webkit-linear-gradient(120deg, #ff8997, #ff9988);
+                    // background: $gradient-1;
+                    // padding: 18px 0;
+                    // border-radius: 50px;
+                    // &:after {
+                    //     position: absolute;
+                    //     content: '';
+                    //     left: 1px;
+                    //     top: 1px;
+                    //     right: 1px;
+                    //     bottom: 1px;
+                    //     background: $white;
+                    //     z-index: -1;
+                    //     border-radius: 50px;
+                    // }
+                    // &.profit {
+                    //     background: -webkit-linear-gradient(130deg, #2b942f, #96e040);
+                    //     &:after {
+                    //         display: none;
+                    //     }
+                    //     span {
+                    //         &.number {
+                    //             @include text-gradient-1;
+                    //             background-image: -webkit-linear-gradient(130deg, #ffffff, #ffffff);
+                    //         }
+                    //         &.title {
+                    //             color: $white;
+                    //         }
+                    //     }
+                    // }
+                    span {
+                        display: block;
+                        &.title {
+                            font-size: 15px;
+                            line-height: 28px;
+                            color: $white;
+                            font-weight: 500;
+                            margin-top: -6px;
+                            margin-bottom: -1px;
+                            // color: #666;
+                            // font-family: $heading-font;
+                        }
+                        &.number {
+                            font-size: 22px;
+                            line-height: 32px;
+                            color: $white;
+                            font-weight: 500;
+                            margin-bottom: -8px;
+                            font-family: $heading-font;
+                            // @include text-gradient-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

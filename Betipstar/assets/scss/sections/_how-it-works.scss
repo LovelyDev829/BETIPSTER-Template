@@ -1,0 +1,43 @@
+// how it works
+.how-it-works {
+    padding: 120px 0;
+    .single-process {
+        .part-img {
+            padding: 0 40px;
+            margin-bottom: 24px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            img {
+
+            }
+        }
+        .part-text {
+            text-align: center;
+            padding: 0 18px;
+            h3.title {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                span {
+                    display: inline-block;
+                    background: -webkit-linear-gradient(110deg, #eb3349, #f45c43);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 700;
+                    font-size: 30px;
+                    // font-style: italic;
+                    font-family: $special;
+                    margin-right: 6px;
+                }
+            }
+            p {
+                color: #666;
+                line-height: 28px;
+                margin-bottom: -5px;
+            }
+        }
+    }
+}

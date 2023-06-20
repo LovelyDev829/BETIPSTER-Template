@@ -1,0 +1,509 @@
+// add tips
+.add-tips {
+    padding: 120px 0;
+    // background: url('../img/shape-bg-1.png') center bottom no-repeat;
+    background-size: cover;
+    .primary-step {
+        padding: 40px;
+        // box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(#000, 0.1);
+        margin-bottom: 30px;
+        background: $white;
+        .dropdown {
+            a.dropdown-toggle {
+                width: 100%;
+                border: 1px solid rgb(230 230 230 / 1);
+                height: 50px;
+                line-height: 50px;
+                padding: 0 20px;
+                border-radius: 0;
+                color: #555;
+                background: rgb(230 230 230 / 0.6);
+                text-align: left;
+                position: relative;
+                &:active, &:focus {
+                    box-shadow: none;
+                }
+                &:after {
+                    border: none;
+                    width: 12px;
+                    height: 12px;
+                    background: $gradient-1;
+                    top: 50%;
+                    margin-top: -8px;
+                    position: absolute;
+                    right: 20px;
+                    -webkit-clip-path: polygon(100% 28%, 100% 54%, 50% 100%, 0 55%, 0 26%, 50% 74%);
+                    clip-path: polygon(100% 28%, 100% 54%, 50% 100%, 0 55%, 0 26%, 50% 74%);
+                    @include transition($transition);
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: -1px;
+                    top: 0;
+                    height: 100%;
+                    width: 32px;
+                    background: #f0f0f0;
+                    border-right: 1px solid rgb(230 230 230 / 1);
+                }
+                &.focused {
+                    background: -webkit-linear-gradient(120deg, #1a9e11, #3d7529);
+                    color: $white;
+                    &:after {
+                        display: none;
+                    }
+                    &:before {
+                        background: -webkit-linear-gradient(30deg, #1a9e11, #3d7529);
+                    }
+                }
+            }
+            .dropdown-menu {
+                margin-top: 0;
+                padding: 0;
+                border-radius: 0;
+                border: none;
+                box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+                .dropdown-item {
+                    padding: 15px 30px;
+                    border-bottom: 1px solid rgba(0,0,0,.15);
+                    font-size: 16px;
+                    color: #555;
+                    @include transition(0s);
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    &:active, &:focus {
+                        background: $gradient-1;
+                        color: $white;
+                    }
+                }
+                &.bookmers-logo {
+                    .dropdown-item {
+                        span {
+                            &.number {
+                                display: inline-block;
+                                background: $gradient-1;
+                                color: $white;
+                                padding: 0 3px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                &.sports-logo {
+                    .dropdown-item {
+                        padding: 15px 30px 15px 70px;
+                        position: relative;
+                        span.icon {
+                            // background: $gradient-1;
+                            // @include text-gradient-1;
+                            color: #ff4647;
+                            font-size: 24px;
+                            top: 50%;
+                            left: 30px;
+                            transform: translateY(-50%);
+                            font-style: bold;
+                            position: absolute;
+                            height: 100%;
+                            line-height: 50px;
+                        }
+                        &:active, &:focus {
+                            span.icon {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prediction-select-step {
+        &.disabled {
+            position: relative;
+            filter: blur(1px);
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                z-index: 2;
+                opacity: 0.5;
+            }
+        }
+        .single-game {
+            padding: 40px;
+            // box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(#000, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: $white;
+        }
+        .part-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 40px;
+            position: relative;
+            z-index: 2;
+            color: $white;
+            &:after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: $gradient-1;
+                z-index: -1;
+            }
+        }
+        .team {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            span {
+                line-height: 32px;
+                font-family: $heading-font;
+                font-size: 16px;
+            }
+        }
+        .time {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            span {
+                display: block;
+                line-height: 32px;
+                font-family: $heading-font;
+                &.live-badge {
+                    background: red;
+                    display: inline-block;
+                    color: $white;
+                    font-size: 14px;
+                    padding: 0 8px;
+                    height: 20px;
+                    line-height: 22px;
+                    margin-left: 5px;
+                    // position: absolute;
+                    // top: 0;
+                    // right: 0;
+                }
+            }
+        }
+        .prediction-sheet {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    flex: 1;
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: 7px 0px;
+                        border: 1px solid rgb(230 230 230 / 1);
+                        margin-right: 10px;
+                        background: rgb(230 230 230 / 0.6);
+                        font-family: $heading-font;
+                        line-height: 26px;
+                        position: relative;
+                        z-index: 2;
+                        color: #555;
+                        @include transition($transition);
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: $gradient-1;
+                            z-index: -1;
+                            @include transition($transition);
+                            opacity: 0;
+                        }
+                        &:hover {
+                            color: $white;
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            margin-right: 0;
+                        }
+                    }
+                    span {
+                        display: block;
+                        &.match-odds {
+                            font-size: 15px;
+                        }
+                        &.prediction-amount {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .publish-step {
+        padding: 40px;
+        // box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(#000, 0.2);
+        margin-top: 30px;
+        overflow: hidden;
+        background: $white;
+        .part-header {
+            display: flex;
+            .left {
+                background: $gradient-1;
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                span {
+                    display: inline-block;
+                    font-family: $heading-font;
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 30px;
+                    &.vs {
+                        font-size: 16px;
+                        line-height: 26px;
+                        margin: 0 20px;
+                    }
+                }
+            }
+            .right {
+                border: 1px solid #ff4647;
+                border-right-width: 6px;
+                padding: 7px 30px;
+                span {
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: #666;
+                }
+            }
+        }
+        .part-analysis {
+            label {
+                font-family: $heading-font;
+                color: #666;
+                font-size: 15px;
+                margin-bottom: 13px;
+                margin-top: 27px;
+            }
+            textarea {
+                width: 100%;
+                max-width: 100%;
+                border: 1px solid #ccc;
+                height: 100px;
+                padding: 13px 20px;
+                display: grid;
+                margin-bottom: 30px;
+            }
+        }
+        .part-right {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding-left: 20px;
+            &:after {
+                position: absolute;
+                content: '';
+                left: -50px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 500px;
+                height: 500px;
+                background: #242424;
+                z-index: -2;
+                opacity: .8;
+                border-radius: 50% 0 0 50%;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                left: -50px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 500px;
+                height: 500px;
+                background: url('../img/stadium.jpg') center center no-repeat;
+                background-size: cover;
+                z-index: -2;
+                border-radius: 50% 0 0 50%;
+            }
+           .stake {
+               display: flex;
+               button {
+                   width: 45px;
+                   height: 45px;
+                   border: none;
+                   background: $gradient-1;
+                   color: $white;
+                   font-size: 20px;
+                   line-height: 45px;
+                   outline: none;
+                   cursor: pointer;
+                   border-radius: 50%;
+               }
+               span {
+                   &.stake-number {
+                       margin: 0 10px;
+                        border-radius: 50px;
+                       height: 45px;
+                       width: 100px;
+                       display: inline-block;
+                       text-align: center;
+                       font-size: 25px;
+                       line-height: 45px;
+                       color: #fff;
+                        border: 1px solid #e6e6e6;
+                       background: transparent;
+                   }
+               }
+           } 
+           .publish-btn {
+               height: 45px;
+               line-height: 45px;
+               padding: 0 35px;
+               border: none;
+               outline: none;
+               cursor: pointer;
+               font-size: 16px;
+               font-family: $heading-font;
+               background: $gradient-1;
+               color: $white;
+               margin-top: 30px;
+               border-radius: 50px;
+           }
+        }
+        .part-footer {
+            .privacy {
+                form {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+// radio check button
+.betipsta-radio[type="radio"]:checked,
+.betipsta-radio[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.betipsta-radio[type="radio"]:checked + label,
+.betipsta-radio[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    user-select: none;
+    font-family: $heading-font;
+}
+.betipsta-radio[type="radio"]:checked + label:before,
+.betipsta-radio[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $base-color;
+    border-radius: 100%;
+    background: #fff;
+}
+.betipsta-radio[type="radio"]:checked + label:after,
+.betipsta-radio[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $base-color;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.betipsta-radio[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.betipsta-radio[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.betipsta-radio[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+position: absolute;
+left: -9999px;
+}
+.betipsta-radio[type="checkbox"]:not(:checked) + label,
+.betipsta-radio[type="checkbox"]:checked + label {
+position: relative;
+padding-left: 1.95em;
+cursor: pointer;
+margin: 0;
+line-height: 100%;
+}
+
+/* checkbox aspect */
+.betipsta-radio[type="checkbox"]:not(:checked) + label:before,
+.betipsta-radio[type="checkbox"]:checked + label:before {
+content: '';
+position: absolute;
+left: 0; 
+top: 1px;
+width: 20px; 
+height: 20px;
+border-radius: 50px;
+border: 1px solid $base-color;
+background: #fff;
+}
+/* checked mark aspect */
+.betipsta-radio[type="checkbox"]:not(:checked) + label:after,
+.betipsta-radio[type="checkbox"]:checked + label:after {
+content: '';
+position: absolute;
+top: 5px; 
+left: 4px;
+width: 12px;
+border-radius: 50px;
+height: 12px;
+font-size: 1.3em;
+line-height: 0.8;
+background: $gradient-1;
+transition: all .2s;
+font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+.betipsta-radio[type="checkbox"]:not(:checked) + label:after {
+opacity: 0;
+transform: scale(0);
+}
+.betipsta-radio[type="checkbox"]:checked + label:after {
+opacity: 1;
+transform: scale(1);
+}

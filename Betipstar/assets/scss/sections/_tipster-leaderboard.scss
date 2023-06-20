@@ -1,0 +1,145 @@
+// tipster leaderboard
+.leaderboard {
+    padding: 120px 0;
+    &.tipster-page {
+        padding: 0;
+        .leaderboard-table {
+            .table {
+                border: 1px solid #ddd;
+            }
+        }
+    }
+    .leaderboard-table {
+        .table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            background: #ebf2f9;
+            padding: 20px 30px;
+            margin-bottom: 0;
+            thead {
+                background: $white;
+                tr {
+                    th {
+                        padding: 0 30px;
+                        height: 60px;
+                        vertical-align: middle;
+                        font-family: $heading-font;
+                        color: #666;
+                        border: none;
+                        text-align: center;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: $white;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    th {
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: 500;
+                        padding: 0 30px;
+                        height: 70px;
+                        vertical-align: middle;
+                        font-family: $heading-font;
+                        color: #666;
+                        border: none;
+                        img.ranked-sticker {
+                            width: 38px;
+                        }
+                        span.rank-number {
+                            display: inline-block;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                        }
+                    }
+                    td {
+                        border: none;
+                        text-align: center;
+                        padding: 0 30px;
+                        height: 70px;
+                        vertical-align: middle;
+                        font-family: $heading-font;
+                        color: #666;
+                        a.tipster-pic {
+                            display: inline-block;
+                            display: -webkit-inline-box;
+                            width: 42px;
+                            height: 42px;
+                            overflow: hidden;
+                            border: 1px solid #eb3349;
+                            padding: 2px;
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        .buy-tips-btn {
+                            display: inline-block;
+                            background: $gradient-1;
+                            color: $white;
+                            font-weight: 400;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 20px;
+                            font-size: 14px;
+                        }
+                        span.profit {
+                            display: inline-block;
+                            border: 1px solid green;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 20px;
+                            color: green;
+                        }
+                        span.single-data {
+                            display: inline-block;
+                            border: 1px solid #666;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 20px;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .buttons-cover {
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        margin-top: 40px;
+        .load-more-btn {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            background: $gradient-1;
+            color: $white;
+            font-family: $heading-font;
+            font-size: 18px;
+            padding: 0 30px;
+            border-left: 30px solid #fff;
+            border-right: 30px solid #fff;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%);
+                width: 9999px;
+                height: 1px;
+                background: #ddd;
+                z-index: -1;
+            }
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+}
